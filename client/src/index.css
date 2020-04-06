@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.content-wrapper {
+    flex: 1;
+}
+.content-page {
+  display: flex;
+ min-height: 100vh;
+ flex-direction: column;
+}
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: #f1f1f1;
+}
+.flex-item {
+  -webkit-flex-grow: 1; /* Safari */
+  flex-grow: 1;
+text-align: center;
+}
+.wysiwyg-editor {
+  min-height: 200px
+}
+form label {
+  margin-top: 20px
+}
