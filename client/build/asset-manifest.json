@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.838e941e.chunk.css",
+    "main.js": "/static/js/main.f9e9138e.chunk.js",
+    "main.js.map": "/static/js/main.f9e9138e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.35eb2b37.js",
+    "runtime-main.js.map": "/static/js/runtime-main.35eb2b37.js.map",
+    "static/css/2.03407977.chunk.css": "/static/css/2.03407977.chunk.css",
+    "static/js/2.cd5124fd.chunk.js": "/static/js/2.cd5124fd.chunk.js",
+    "static/js/2.cd5124fd.chunk.js.map": "/static/js/2.cd5124fd.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.6cb789fff1c5cc81b9902a63d13e2b54.js": "/precache-manifest.6cb789fff1c5cc81b9902a63d13e2b54.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.03407977.chunk.css.map": "/static/css/2.03407977.chunk.css.map",
+    "static/css/main.838e941e.chunk.css.map": "/static/css/main.838e941e.chunk.css.map",
+    "static/js/2.cd5124fd.chunk.js.LICENSE.txt": "/static/js/2.cd5124fd.chunk.js.LICENSE.txt",
+    "static/media/skin-blue.css": "/static/media/footer.cd1696ad.png",
+    "static/media/ADMStyle.css": "/static/media/boxed-bg.7799dece.jpg",
+    "static/media/font-awesome.min.css": "/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/react-widgets.css": "/static/media/rw-widgets.eceddf47.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.35eb2b37.js",
+    "static/css/2.03407977.chunk.css",
+    "static/js/2.cd5124fd.chunk.js",
+    "static/css/main.838e941e.chunk.css",
+    "static/js/main.f9e9138e.chunk.js"
+  ]
+}
