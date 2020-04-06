@@ -54,7 +54,7 @@ exports.get = function (req, res, next) {
 
 exports.update = function (req, res, next) {
   const { naam, beschrijving } = req.body;
-  Leverancier.update(
+  Leverancier.updateOne(
     { _id: req.params.id },
     {
       naam,

@@ -16,7 +16,7 @@ const reserveringen = require('./modules/reserveringen/routes')
 const Bedrijven = require('./controllers/bedrijven')
 //Custom express routing middleware that checks to see if the authenticated user is an admin
 const requireAdmin = require('./services/requireAdmin')
-const requireTrainerAdmin = require('./services/requireTrainigAdmin')
+
 module.exports = function(app) {
   //auth
   app.get('/api/server', function(req, res) {

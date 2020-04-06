@@ -12,7 +12,7 @@ class Sitebar extends Component {
   render() {
     const { username, profile, token } = this.props;    
 
-    const beeldbankadmin = () => {
+    const admin = () => {
       if (token.role === "admin" || token.role === "root") {
         return (
           <li className="treeview">
@@ -33,6 +33,40 @@ class Sitebar extends Component {
                 <Link to="/admin/gebruikers/">
                   <i className="fa fa-users" />
                   <span>Gebruikers</span>
+                </Link>
+              </li>
+            </ul>
+          </li>
+        );
+      }
+    };
+
+    const huurconfig = () => {
+      if (token.role === "admin" || token.role === "root") {
+        return (
+          <li className="treeview">
+            <a href="#!">
+              <i className="fa fa-dashboard" />
+              <span>Verhuur</span>
+              <span className="pull-right-container">
+                <i className="fa fa-angle-left pull-right" />
+              </span>
+            </a>
+            <ul className="treeview-menu">
+              <li>
+                <Link to="/admin/voorraad">
+                  <i className="fa fa-book" />
+                  <span>Voorraad</span>
+                </Link>
+
+                <Link to="/admin/categorie">
+                  <i className="fa fa-users" />
+                  <span>Categorie</span>
+                </Link>
+
+                <Link to="/admin/leverancier">
+                  <i className="fa fa-users" />
+                  <span>Leverancier</span>
                 </Link>
               </li>
             </ul>
@@ -65,7 +99,8 @@ class Sitebar extends Component {
           {username.role && (
             <ul className="sidebar-menu" data-widget="tree">
               <li className="header">HOOFDMENU</li>
-              {beeldbankadmin()}
+              {huurconfig()}
+              {admin()}
             </ul>
           )}
         </section>

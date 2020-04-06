@@ -11,6 +11,7 @@ import RequireAuthAdmin from "./Auth/require_auth_admin";
 import ProfilePage from "./Pages/Profile/profile";
 import GebruikersPage from "./Pages/Administrator/Gebruikers";
 import Bedrijven from "./Pages/Administrator/Bedrijven/routes"
+import Leveranciers from "./Pages/Leverancier/routes"
 import Loading from "./Components/loading/loading";
 
 
@@ -51,6 +52,7 @@ class App extends Component {
                   path="/admin/gebruikers"
                   component={RequireAuth(GebruikersPage)}
                 />         
+                <Leveranciers/>
                 <Bedrijven/>
                 <Route render={() => <Redirect to="/404" />} />
               </Switch>
