@@ -9,6 +9,10 @@ const requireAuth = passport.authenticate('jwt', {session: false});
 const requireSignin = passport.authenticate('local', {session: false});
 const Profile = require('./controllers/profile');
 const Gberuikers = require('./controllers/gebruikers')
+const leveranciers = require('./modules/leverancier/routes')
+const categorie = require('./modules/categorie/routes')
+const voorraad = require('./modules/voorraad/routes')
+const reserveringen = require('./modules/reserveringen/routes')
 const Bedrijven = require('./controllers/bedrijven')
 //Custom express routing middleware that checks to see if the authenticated user is an admin
 const requireAdmin = require('./services/requireAdmin')
@@ -53,8 +57,10 @@ app.put('/api/admin/gebruikers/:id', requireAuth, requireAdmin, Gberuikers.updat
  app.get('/api/admin/bedrijven/:id', requireAuth, Bedrijven.get);
  app.post('/api/admin/bedrijven/:id', requireAuth, requireAdmin, Bedrijven.update);
 
-
-
+ leveranciers(app, requireAuth, requireAdmin);
+ categorie(app, requireAuth, requireAdmin);
+ voorraad(app, requireAuth, requireAdmin);
+ reserveringen(app, requireAuth, requireAdmin);
   app.get('*', function (req, res) {
       res.sendFile(path.join(__dirname, '../build', 'index.html'));
     });
